@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    background-color: #f4f4f4;
+}
+a{
+    text-decoration: none;
+    color: #f4f4f4;
+    
+}
+span{
+    color: red;
+}
+header {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+header h1{
+    align-self: flex-start;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.help{
+    display: flex;
+    justify-content: right;
+    gap : 20px;
+    padding-right: 5%;
+}
+
+.help a:hover{
+    color:red;
+}
+
+section {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+
+.happy {
+    margin-top: 100px;
+    width: 100%;    
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-bottom: 50px;
+   
+}
+          
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 10px;   
+    padding-bottom: 50px; 
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

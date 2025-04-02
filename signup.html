@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/signin.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Login Form Using HTML And CSS Only</title>
+  <link rel="icon" href="images/icons8-shop-pastel-glyph-32.png" type="image/x-icon">
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container">
+			
+<form id="registrationForm" method="post" action="index.html" onsubmit="return validateForm()">
+    <h1>Sign Up</h1>
+    <div class="social-container">
+        <a href="#" class="social"><i class="fa fa-google fa-2x"></i></a>
+        <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="#" class="social"><i class="fab fa fa-instagram fa-2x"></i></a>
+    </div>
+    <span>Other ways to SignUp</span>
+    <input type="text" placeholder="Enter your Name" required/>
+    <input type="email" placeholder="Email" required/>
+    <input type="tel" id="phoneNumber" placeholder="Mobile Number" name="phoneNumber" pattern="[0-9]{10}" required>
+    <input type="password" placeholder="Password" pattern=".{6,}" title="Password must be at least 6 characters" required>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" pattern=".{6,}" title="Password must be at least 6 characters" required>
+    <span id="errorMessage" class="error-message"></span>
+    <button type="submit"><b>Register</b></button>
+</form>
+            
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<h1>NerdStore</h1>
+					<p>Elevate your tech game with NerdStore - Your one-stop shop for the coolest electronic gadgets. Embrace innovation and redefine your digital experience.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script>
+        function validateForm() {
+          var password = document.querySelector('input[type="password"]').value;
+          var confirmPassword = document.getElementById("confirmPassword").value;
+          var errorMessage = document.getElementById("errorMessage");
+      
+          if (password !== confirmPassword) {
+            errorMessage.innerHTML = "Passwords do not match";
+            return false;
+          } else {
+            errorMessage.innerHTML = "success";
+            return true;
+          }
+        }
+      </script>
+      
+</body>
+</html>
