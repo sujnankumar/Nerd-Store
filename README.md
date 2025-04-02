@@ -10,9 +10,6 @@ This repository contains the source code for an e-commerce website selling vario
 - Modal for product details
 - Responsive design
 
-## Prerequisites
-
-Ensure you have [list any prerequisites or dependencies here].
 
 ## Installation
 
