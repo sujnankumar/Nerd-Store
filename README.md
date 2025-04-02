@@ -18,7 +18,7 @@ Ensure you have [list any prerequisites or dependencies here].
 
 1. Clone the repository: `git clone https://github.com/sujnankumar/Nerd-Store.git`
 2. Navigate to the project directory: `cd your-repository`
-3. Open `home.html` in your browser.
+3. Open `index.html` in your browser.
 
 ## Usage
 
@@ -26,7 +26,7 @@ Navigate through the website, view product details, and use the shopping cart.
 
 ## File Structure
 
-- `index.html`: Main HTML file.
+- `home.html`: Main HTML file.
 - `css/`: Stylesheets.
 - `js/`: JavaScript files.
 - `images/`: Image assets.
